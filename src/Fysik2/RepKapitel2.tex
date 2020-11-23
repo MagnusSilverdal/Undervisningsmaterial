@@ -1,0 +1,102 @@
+%! Author = magnus.silverdal
+%! Date = 2020-11-23
+
+% Preamble
+\documentclass[11pt]{beamer}
+\usetheme{Copenhagen}
+% Packages
+\usepackage{amsmath}
+
+\title{Repetition Kapitel 2 Harmonisk svängningsrörelse}
+\author{Magnus Silverdal}
+\institute{NTI Gymnasiet}
+\date{\today}
+% Document
+\begin{document}
+    \frame{\titlepage}
+
+    \begin{frame}
+        \frametitle{Harmonisk svängning}
+
+        \begin{block}{Villkor för harmonisk oscillator}
+            Om kraften är proportionell mot avvikelsen från ett jämviktsäge finns förutsättingar för en harmonisk
+            svängning, en oscillator. Matematisk betyder det att kraften är en linjär funtion
+            \begin{equation}
+                F = k \cdot x
+            \end{equation}
+            Newtons andra lag $ F = m \cdot a$ ger, när de två uttrycken sätts lika med varandra
+            \begin{equation}
+                F = k \cdot x = m \cdot a = F
+            \end{equation}
+            Eftersom $a = \frac{d^2 x}{dt^2} = x''$ så blir resultatet en differentialekvation
+            \begin{eqnarray}
+                k \cdot x &=& m \cdot x'' \text{eller} \\
+                m \cdot x'' - k \cdot x &=& 0 \label{harmosc}
+            \end{eqnarray}
+        \end{block}
+    \end{frame}
+    \begin{frame}
+        \begin{block}{}
+            Lösningen till denna ekvation är en trigonometrisk funktion
+            \begin{equation}
+                x(t) = A \sin{\omega t} \label{sol}
+            \end{equation}
+            Beroende på kraften så får lösningen olika uttryck för $\omega$. För en fjäder i en vikt är kraften, enligt
+            Hooks lag, $f = k x$ där $k$ är fjäderkonstanten. Insättning av lösningen (\ref{sol}) i (\ref{harmosc}) ger uttrycket
+            \begin{equation}
+                \omega = \sqrt{\frac{k}{m}}
+            \end{equation}
+            För en matematisk pendel kan kraften längs banan (cirkelbågen) istället skrivas $- m g \sin{\frac{x}{l}}$. För små vinklar
+            gäller att $\sin{x} \approx x$. Det ger samma lösning (\ref{sol}) men med en annan vinkelhastighet
+            \begin{equation}
+                \omega = \sqrt{\frac{g}{l}}
+            \end{equation}
+        \end{block}
+    \end{frame}
+    \begin{frame}
+        \begin{block}{Vinkelhastighet}
+            I lösningen till den harmoniska oscillatorn (\ref{harmosc}) är vinkelhastigheten $\omega$ central. I praktiken
+            är den svår att observera. Vanligare är att mäta periodtiden $T$ eller frekvensen $f$.
+            \begin{equation}
+                \omega = 2 \pi f = \frac{2 \pi}{T}
+            \end{equation}
+        \end{block}
+    \end{frame}
+    \begin{frame}
+        \begin{block}{Fortskridande vågor}
+            Ekvationen (\ref{sol}) beskriver en våg som utbreder sig. När en våg rör sig ges hastigheten av $v = f \lambda$.
+            Detta är våghastigheten. För ljud är det ljudhastigheten, för ljus ljushastigheten och för en våg på en sträng
+            ges den av $v = \frac{F}{\rho A}$. Den är i princip oberoende av vågen.
+
+            Vågor som rör sig kan reflekteras och transmitteras när de rör sig mellan olika medier, dvs om våghastigheten skulle förändras.
+            Vågor som träffar andra vågor genomgår superposition och om de är i fas kan resonsns eller stående vågor uppstå.
+            En stående våg inträffar när refekterade vågor hamna i fas. För att det ska hända måste våglängden stämma med mediets längd.
+            En stående våg består av noder och bukar. En nod är den del av vågen som inte rör sig, buken är den del som svänger mest.
+            Beroende på om mediet är öppet eller slutet i ändarna blir villkoret för stående våg olika.
+            \end{block}
+        \end{frame}
+    \begin{frame}
+        \begin{block}{}
+            För en helt öppen eller helt sluten situation gäller villkoret för längden $l$ och våglängden $\lambda$
+            \begin{equation}
+                l = n \frac{\lambda}{2} , n = 1,2,3...
+            \end{equation}
+            och för en halvöppen situation
+            \begin{equation}
+                l = \frac{(2n-1)\lambda}{4}  , n = 1,2,3...
+            \end{equation}
+        \end{block}
+    \end{frame}
+    \begin{frame}
+        \begin{block}{Ljud}
+            Ljudets intensitet $I$ är ett mått på hur mycket energi som når lyssnaren
+            \begin{equation}
+                I = \frac{P}{A}
+            \end{equation}
+            Ljudnivån $L$ bestäms som det logaritmiska förhållandet mellan ljudinstensiteten och den lägsta hörbara intensiteten $I_0 = 10^{-12}$.
+            \begin{equation}
+                L = 10 \log{\frac{I}{I_0}}
+                \end{equation}
+        \end{block}
+    \end{frame}
+\end{document}
