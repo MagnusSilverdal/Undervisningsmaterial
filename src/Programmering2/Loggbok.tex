@@ -1,0 +1,70 @@
+%! Author = magnus.silverdal
+%! Date = 2020-11-30
+
+% Preamble
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\begin{document}
+    \begin{titlepage}
+        \centering
+        \includegraphics[width=0.15\textwidth]{../images/logo.png}\par\vspace{1cm}
+        {\scshape\LARGE Programmering 2 \par}
+        \vspace{1cm}
+        {\scshape\Large Projekt 2\par}
+        \vspace{1.5cm}
+        {\huge\bfseries Loggbok\par}
+        \vspace{2cm}
+        {\Large\itshape Ett objektorienterat system med koppling till filer och databaser\par}
+        \vfill
+        Utformad av\par
+        Magnus \textsc{Silverdal}
+
+        \vfill
+
+% Bottom of the page
+        {\large \today\par}
+    \end{titlepage}
+    \section{Inledning}
+        Det har nu blivit dags att sätta samman all er kunskap till ett fungerande projekt. Tanken är att ni ska börja
+        från början och använda era lärdommar för att skapa en bra loggboksapplikation. Ni har redan, i  olika utsträckning,
+        löst delar av uppgiften men i efterhand står det ofta klart att programmet hade kunna skrivas bättre. Speciellt
+        eftersom ni inte hade hela problemet klart för er när ni startade.
+
+    \section{Uppgiften}
+        Er uppgift är att skriva ett användbart loggbokssytem. Loggbokens centrala delar är att kunna skriva noteringar som taggas med
+        författare och datum. Systemet ska vara stabilt och tillförlitligt.
+        \subsection{Redovisning}
+            Projektet redovisas som ett projekt i github. Era commits och projektbrädet kommer att vara centrala för att
+            redovisa processen. De tekniska delarna redovisas i den dokumentation och utvärdering som avslutar projektet.
+        \subsection{Obligatoriska delar}
+            \begin{enumeration}
+                \item [OOP] Loggboken, datat i den och funktionerna ska lösas med objektorientering
+                \item [MVC] Ni ska arbeta för att ert program ska vara uppbyggt enligt Model-view-controller-tanken.
+                Det betyder att det grafiska gränssnittet ska vara oberoende av loggbokens inre struktur.
+                \item [Databas] Loggboken ska också kopplas till en databas. Alla inlägg som görs ska sparas i databasen
+                och programmet ska läsa in den information som ligger i databasen när det startas
+                \item [Filhantering] Loggboken ska gå att spara till fil och återställ från fil. Observera att detta kan
+                kollidera med databaskopplingen.
+
+            \end{enumeration}
+        \subsection{Fördjupningar och extra uppgifter}
+            \begin{enumeration}
+                \item Användarvänligt GUI
+                \item Commandline-läge
+                \item Arbeta med olika loggböcker. Spara till olika filer.
+                \item Tillåta att flera användare skriver i samma loggbok \"samtidigt\".
+                \item Användare med inloggning (databas)
+                \item Skapa nya loggböcker på databas-servern
+                \item Skapa en generell lösning för databas-kopplingen
+            \end{enumeration}
+    \section{Tidsplan}
+        Ni kommer att arbeta med utvecklingen av loggboken fram till jul. Det betyder 6st 80-minuterspass. Ni får planera
+        lägga upp ert arbete så att ni blir klara i tid. Använd ett projektbräde i github för att hålla koll. Fila inte
+        allt för mycket på detaljer utan se till att ni uppfyller kraven först.
+
+        Efter jul kommer ni att skriva en Post Mortem och arbeta med dokumentation
+    \section{Bedömning}
+\end{document}
