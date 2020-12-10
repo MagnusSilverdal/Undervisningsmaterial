@@ -1,0 +1,75 @@
+%! Author = magnus.silverdal
+%! Date = 2020-12-03
+
+% Preamble
+\documentclass[11pt]{beamer}
+\usetheme{Copenhagen}
+% Packages
+\usepackage{amsmath}
+
+\title{Repetition Kapitel 5}
+\author{Magnus Silverdal}
+\institute{NTI Gymnasiet}
+\date{\today}
+% Document
+\begin{document}
+    \frame{\titlepage}
+
+    \begin{frame}
+        \frametitle{Arbete}
+        Inom mekanik (läran om saker som rör sig) behövs en kraft $F$ för att förändra hur föremålen rör sig, enligt Newtons andra lag.
+        Om det sker en förändring har ett arbete $W$ utförts och det definieras som
+        \begin{equation}
+            W = F \cdot s
+        \end{equation}
+        där $s$ är sträckan som kraften verkat längs. Arbetets enhet blir $Nm$
+
+        \vspace{10}
+        Detta gäller endast om kraften är konstant, det generella uttrycket är
+        \begin{equation}
+            W = \int F(s) ds
+        \end{equation}
+
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Energi}
+        Arbete är en förändring av energin hos ett föremål. Inom Mekaniken betyder det att när en kraft förändrar
+        föremålets rörelse så förändras föremålets energi. Eftersom energi inte kan skapas eller förstöras är arbete
+        ett sätt att flytta energi från en form eller plats till en annan
+        \begin{equation}
+            W = \Delta E
+        \end{equation}
+        Detta gäller för det eller de föremål som studeras. Enheten för energi är Joule och betecknas $J$ men enligt
+        formeln syns att det är exakt samma sak som $Nm$
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Mekanisk energi}
+        De energier som är relevanta i ett mekanisk system är rörelseenergi, eller kinetisk energi
+        \begin{equation}
+            E_k = \frac{mv^2}{2}
+        \end{equation}
+        och lägesenergi eller potentiell energi
+        \begin{equation}
+            E_p = mgh
+        \end{equation}
+        All energi är relativ någon 0-nivå så när vi jämför energier måste vi tänka på att de ska ha samma nollnivå.
+        I praktiken innebär det att höjd och hastighet ska mätas på samma relativa sätt.
+    \end{frame}
+    \begin{frame}
+        \frametitle{Effekt och verkningsgrad}
+        För att kunna jämföra och räkna på olika arbeten räcker det inte alltid att veta slutresultatet, det kan också
+        spela roll hur lång tid arbetet tagit. Ett mått på detta är effekt. Definitionen på effekt är energiändring per tidsenhet
+        \begin{equation}
+            P = \frac{\Delta E}{\Delta t}
+        \end{equation}
+        För att beskriva hur stor del av den energi som behövs för ett arbete jämfört med hur mycket arbete som utförs
+        används begreppet verkningsgrad.  Det är kvoten mellan de nyttiga, utförda arbetet och den tillförda energin.
+        Eftersom effekten är arbete per tidsenehet och arbetet utförs under en given tid kan detta också skrivas som
+        \begin{equation}
+            \eta = \frac{E_{nyttig}}{E_{tillförd}} = \frac{P_{nyttig}}{P_{tillförd}}
+        \end{equation}
+
+    \end{frame}
+\end{document}
