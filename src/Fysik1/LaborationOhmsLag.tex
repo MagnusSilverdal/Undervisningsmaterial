@@ -1,0 +1,73 @@
+%! Author = magnus.silverdal
+%! Date = 2021-03-25
+
+% Preamble
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+
+%data
+\title{Laboration Ellära: Ohms lag}
+\author{Magnus Silverdal}
+\def\inst{Teknikprogrammet}
+\def\typeofdoc{}
+\def\course{Fysik 1}
+\def\name{Magnus Silverdal}
+\def\username{Magnus.Silverdal}
+\def\email{\username{}@ga.ntig.se}
+\def\graders{Magnus Silverdal}
+
+%Sidhuvud och sidfot
+\lfoot{\footnotesize{\name, \\ \email}}
+\rfoot{\footnotesize{\today}}
+\lhead{\sc\footnotesize\title}
+\rhead{\nouppercase{\sc\footnotesize\leftmark}}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.2pt}
+
+% Document
+\begin{document}
+    \maketitle
+    \section{Del 1: Ohms lag}
+    \subsection{Syfte}
+    Syftet med den här delen av laborationen är att experimentellt ta fram sambandet mellan ström och spännning.
+    Ditt mål är att hitta strömmen $I$ som en funktion av spänningen $U$, $I = f(U)$.
+    \subsection{Metod och material}
+    Du behöver
+    \begin{enumeration}
+        \item Spänningskälla (kub)
+        \item kablar
+        \item motstånd monterat i fäste
+        \item Voltmeter (Pasco)
+        \item Amperemeter (Pasco)
+        \item Dator
+        \item SparkVUE programvara (finns på classroom)
+    \end{enumeration}
+    \subsubsection{Utförande}
+    Börja med att sätta fast motståndet i krokodilklämmorna. Koppla sedan inhop en krets med
+    kuben-motståndet-ampermetern-kuben i serie (efter varandra). Koppla sedan in voltmetern parallellt med motståndet (över)
+    Ta upp en mätserie där du varierar spänningen från 0 till 10 volt. Analysera resultatet (regressionsanalys) och ta fram ett uttryck för
+    $I = f(U)$. Analysera de konstanter du får (enhet och fysikalisk betydelse).
+
+    \section{Del 2: resistansen hos en tråd}
+    Syftet med den här delen av laborationen är att bekräfta sambandet mellan resistansen i en tråd och de variabler som
+    ingår i uttrycket $R = \rho \frac{l}{A}$.
+    Ditt mål är att utföra mätningar som bekräftar formeln.
+    \subsection{Metod och material}
+    Du behöver
+    \begin{enumeration}
+        \item Spänningskälla (kub)
+        \item kablar
+        \item olika trådar (nickel och stål)
+        \item 2 multimetrar
+        \item Dator
+    \end{enumeration}
+    \subsubsection{Utförande}
+    Börja med att sätta fast en av trådarna i krokodilklämmorna. Koppla sedan inhop en krets med
+    kuben-motståndet-ampermetern-kuben i serie (efter varandra). Koppla sedan in voltmetern parallellt med tråden (över)
+    Mät ström och spänning. Variera längden av tråden och upprepa mätningen. Variera tjockleken av tråden (hur?) upprepa mätningen.
+    Byt till en anna tråd, upprepa mätningen. Jämför dina mätningar med formlen. Stämmer den?
+\end{document}
