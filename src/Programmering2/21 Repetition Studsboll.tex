@@ -1,0 +1,54 @@
+%! Author = magnus.silverdal
+%! Date = 2021-08-26
+
+% Preamble
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage{amsmath}
+
+% Document
+\begin{document}
+\section{Syfte}
+    Syftet med den här uppgiften är att repetera några av de viktigaste delarna av programmering 1 som ni kommer att behöva
+    i programmering 2. Beroende på hur mycket ni kan finns flera steg som ni kan gå vidare med men det viktiga är att ni har koll på grunderna.
+\section{Bakgrund}
+    Det absolut viktigaste är att ni har koll på
+    \begin{itemize}
+        \item Variabler
+        \item If-satser (selektion)
+        \item Loopar (iteration)
+        \item Metoder
+        \item Hur program skrivs, körs och felsöks i IntelliJ och CMD
+    \end{itemize}
+    Om du känner att du behöver mer material för att läsa in dig på detta rekommenderar jag antingen
+    \href{https://classroom.udacity.com/courses/ud282}{Den här kursen på Udacity} som går igenom precis dessa delar eller
+    de första kapitlen i vår referenslitteratur till kursen som du hittar i classroom.
+\section{Uppgiften}
+    Din uppgift är att skriva ett simuleringsprogram för en studsande boll. I grundläget gäller kraven i steg 1, du kan sedan
+    välja att göra en eller flera av de andra stegen i valfri ordning.
+    \subsection{Steg 1}
+        Ditt program ska generera en värdetabell med tid och höjd för en studsande boll. Du ska lösa det genom att använda ett
+        fast tidssteg, en acceleration, en hastighet och en höjd som uppdateras i steg. Bollen studsar när den når golvet.
+        Den enklaste lösningen är att låta hastigheten byta riktning när höjden blir mindre än eller lika med 0. Ditt
+        program måste innehålla tre metoder, en för uppdatera hastigheten, en för att uppdatera höjden och en för att kolla studsen.
+        Tänk på vilka variaber som behövs i programmet och vilka som ska skicka in i de olika metoderna. Tänk också på hur
+        du ska få tillbaka de nya värdena! Du ska inte använda någon klass för bollen, det ska vi titta på senare. Stoppa in
+        resultatet av ditt program (värdetabellen med tid och höjd) i excel och rita grafen ($h(t)$).
+    \subsection{steg 2}
+        Lägg till en studskoefficient till studsen så att inte hastigheten bara byter tecken!
+    \subsection{steg 3}
+        Låt bollen röra sig i flera riktningar. I sidled har du konstant hastighet så du behöver ingen acceleration eller
+        uppdateringsmetod för sidohastigheten. Nu får du rita grafen till y(t) och x(t) som en kurva. Glöm inte studsen mot väggarna...
+    \subsection{steg 4}
+        Ta hand om problemet att bollen hamnar under golvet. Om höjden blir negativ måste du räkna baklänges tills du hittar
+        tiden när den slår i golvet och räkna ut den nya hastigheten där.
+    \subsection{steg 5}
+        Vad händer om golvet lutar? Studsen sker alltid mot normalen av golvet så det går att ta hänsyn till golvets
+        lutning när bollen studsar. Nu börjar det bli knepigt...
+    \subsection{steg 6}
+        Använd animeringsmotorn från förra året för att visa hur simuleringen ser ut.
+\section{Redovisning}
+    Lämna in länken till repot i uppgiften. Jag kommer att ge feedback i github allt eftersom.
+
+\end{document}
