@@ -6,6 +6,7 @@
 
 % Packages
 \usepackage{amsmath}
+\usepackage{hyperref}
 
 % Document
 \begin{document}
@@ -13,7 +14,32 @@
     Den här instruktionen hjälper dig att komma igång med projektorerna i ALC, framförallt om du har lektioner där
     och vill utnyttja alla projektorer samtidigt.
 \section{Hur}
-    Du behöver installera en programvara från Epson som du hittar på den \href{här länken}{https://ftp.epson.com/drivers/epson16189.exe}
+    Du behöver installera programvaran EasyMP Network Projection från Epson som du hittar på den \href{https://ftp.epson.com/drivers/epson16189.exe}{här länken}.
+    Efter installationen startar du programmet (vanligtvis hamnar det i en mapp som heter Epson under startmenyn). Välj avancerat anslutningsläge.
+    Efter en stund kommer programmet meddela att att det inte hittar några projektorer. Välj avbryt direkt eller vänta en stund och tryck fortsätt.
 
+    Första gången du kör programmet behöver du leta reda på projektorerna på nätverket. Välj manuell sökning och skriv in projektorns IP-nummer.
+    Projektorerna i ALC ligger på IP-nummer 10.80.44.33 till 10.80.44.36. När den första hittats gör du en ny sökning på nästa tills du har alla fyra i listan.
+    Tänk på att projektorn måste vara påslagen för att den ska kunna hittas. Fjärrkontrollen funkar till alla fyra så du får sikta
+    bra om du bara vill slå av eller på en projektor, whiteboarden funkar som en jättebra spegel för signalen från fjärrkontrollen.
 
+    När du har alla projektorer i listan kan du spara profilen så att du slipper söka efter dem varje gång. Istället kan du då välja en profil i listan.
+
+    Kryssa nu i de projketorer du vill ansluta till och valj anslut. Efter en liten stund dyker det upp ett litet verktygsfält
+    och du delar din skärm med projektorn. För att det ska synas måste projektorn vara i läge LAN, det finns en knapp på fjärrkontrollen för att ställa in detta.
+
+    Nu borde allt fungera.
+\section{Och sen då}
+    I den lilla kontrollpanelen kan du styra projektorerna. Den viktigaste funktionen är pause som fryser bilden på projektorn och låter dig
+    göra annat på din skärm som att läsa mailen. Det går inte att köra i utvidgat läge utan det blir alltid din egen skärm som skickas till projektorn.
+    När du är klar kopplar du ifrån och stänger av projektorerna.
+\section{Var det allt?}
+    Det finns andra verktyg till projektorerna.
+    \subsection{Easy MP Multi PC Projection }
+        Multi PC Projection ger dig möjlighet att administrera elevernas koppling till projektorn.
+        Du kan välja vilken elev som ska visas på vilken projektor och dela upp projektorn så att upp till fyra elever kan visa sina skärmar samtidigt.
+    \subsection{Easy MP Interactive Tools}
+        Interactive Tools kopplar ihop den digitala whiteboarden med datorn och gör så att det som skrivs och ritas kan sparas.
+        Bra både för genomgångar och för elevsamarbeten. Programmet ger också möjlighet att använda pennorna och whiteboarden som en
+        en jättepekskärm.
 \end{document}
